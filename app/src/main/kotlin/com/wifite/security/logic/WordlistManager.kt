@@ -277,6 +277,8 @@ class WordlistManager(private val context: Context) {
             suffixes.map { suffix -> "$base$suffix" }
         }.take(5000)
     }
+
+    private fun getCommonPasswords(): List<String> {
         // 4800+ en yaygın WiFi şifreleri
         return listOf(
             "password", "123456", "123456789", "12345678", "12345",

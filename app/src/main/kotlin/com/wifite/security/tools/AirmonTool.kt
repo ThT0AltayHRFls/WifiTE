@@ -3,7 +3,7 @@ import timber.log.Timber
 
 class AirmonTool {
     fun getStatus() = "Monitor mode active"
-    fun startMonitoring(interface: String) = Timber.d("Starting $interface")
-    fun stopMonitoring(interface: String) = Timber.d("Stopping $interface")
+    fun startMonitoring(interfaceName: String) = Timber.d("Starting $interfaceName")
+    fun stopMonitoring(interfaceName: String) = Timber.d("Stopping $interfaceName")
     fun getMonitorInterfaces() = listOf<String>()
 }
