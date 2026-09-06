@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Wifite Güvenlik</string>
+    <string name="tarama">Tarama Başlat</string>
+    <string name="saldiri">Saldırı Başlat</string>
+</resources>

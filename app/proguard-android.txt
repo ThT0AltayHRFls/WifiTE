@@ -1,0 +1,3 @@
+-keep class com.wifite.security.** { *; }
+-dontwarn com.wifite.security.**
+-keep class timber.** { *; }

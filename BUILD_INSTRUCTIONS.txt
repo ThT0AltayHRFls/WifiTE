@@ -1,0 +1,23 @@
+BUILD WIFITE ANDROID
+====================
+
+RELEASE BUILD:
+1. Generate keystore (if needed)
+2. Module: app
+3. Release variant selected
+4. Build > Build Bundles/APK > Build APK
+5. Sign with keystore
+6. Output: app/release/app-release.apk
+
+DEBUG BUILD:
+1. Build > Build Bundles/APK > Build APK
+2. Select Debug variant
+3. Output: app/debug/app-debug.apk
+
+GRADLE COMMANDS:
+./gradlew build
+./gradlew assembleDebug
+./gradlew assembleRelease
+./gradlew test
+
+APK SIZE: ~15-20 MB

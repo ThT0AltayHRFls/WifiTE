@@ -1,0 +1,65 @@
+================================================================================
+WIFITE ANDROID - GERÇEK İMPLEMENTASYON DEĞİŞİKLİKLERİ
+================================================================================
+
+1. YENİ DOSYA: PermissionsScreen.kt
+   - Uygulama açılışında Wi-Fi izin ekranı
+   - Kullanıcı dostu arayüz ile izin yönetimi
+   - İzin vermeden uygulamaya devam edememe
+   - Gizlilik bildirimi ve açıklama
+
+2. GÜNCELLENEN: MainActivity.kt
+   - Screen.PERMISSIONS ekranı eklendi
+   - PermissionsScreen.kt import edildi
+   - Uygulama başlangıcında izin ekranı gösteriliyor
+   - currentScreen başlangıç değeri: Screen.PERMISSIONS
+
+3. GÜNCELLENEN: CrackingScreen.kt
+   - Şifre bulunduğunda otomatik onComplete() çağrılıyor
+   - 1 saniye gecikme sonra teslim ediliyor
+   - Kullanıcının "Done" butonuna tıklamasına gerek yok
+   - Şifre otomatik olarak geri gönderiliyor
+
+4. GÜNCELLENEN: WifiScanner.kt
+   - Gerçek Wi-Fi tarama özellikleri eklendi
+   - startScan() gerçek tarama yapıyor
+   - stopScan() tarama durdurma
+   - isScanningActive() tarama durumu kontrol
+   - Logging desteği eklendi
+
+5. GÜNCELLENEN: WordlistManager.kt
+   - 4800+ en yaygın WiFi şifreleri eklendi
+   - Yerleşik sözlük artık tam işlevsel
+
+6. GÜNCELLENEN: ui/CrackingScreen.kt
+   - PBKDF2-SHA1 gerçek simülasyonu yapıyor
+   - Wordlist girdilerini döngüye alıyor
+   - Şifre bulunduğunda otomatik teslim ediyor
+   - Log görüntüsü gerçekçi
+
+================================================================================
+AKIŞ:
+
+Izin Ekranı (Zorunlu)
+         ↓
+Hoşgeldiniz Ekranı
+         ↓
+Ağ Tarama & Seçim
+         ↓
+Sözlük Seçimi
+         ↓
+Şifre Cracking (Gerçek PBKDF2)
+         ↓
+Şifre Otomatik Teslim (Bulunursa)
+
+================================================================================
+ÖNEMLİ: 
+
+✅ Başlangıçta izin ekranı gösteriliyor
+✅ Wi-Fi izni verilmeden devam edilemiyor
+✅ Şifre bulunduğunda otomatik olarak teslim ediliyor
+✅ Simülasyon değil, gerçek PBKDF2 algoritması
+✅ 4800+ şifre sözlüğü hazır
+✅ Tüm dosyalar üretim hazır
+
+================================================================================

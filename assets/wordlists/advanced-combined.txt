@@ -1,0 +1,15 @@
+admin@123
+user@123
+test@123
+demo@123
+temp@123
+admin!123
+user!123
+admin#123
+admin$123
+root@123
+root!123
+password@123
+secure123
+secure1234
+secure12345
